@@ -19,7 +19,7 @@ version = "0.5.2"
 edition="2018"
 
 [dependencies]
-bare-metal = "0.2.0"
+bare-metal = { version = "0.2.0", features = ["const-fn"] }
 cortex-m = "0.5.8"
 vcell = "0.1.0"
 
