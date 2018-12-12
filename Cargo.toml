@@ -16,19 +16,16 @@ license = "0BSD"
 name = "nrf51"
 repository = "https://github.com/therealprof/nrf51"
 version = "0.5.2"
+edition="2018"
 
 [dependencies]
-cortex-m = "0.5.7"
+bare-metal = "0.2.0"
+cortex-m = "0.5.8"
 vcell = "0.1.0"
-
-[dependencies.bare-metal]
-features = ["const-fn"]
-version = "0.2.3"
 
 [dependencies.cortex-m-rt]
 optional = true
-version = "0.6.2"
+version = "0.6.5"
 
 [features]
-default = ["rt"]
 rt = ["cortex-m-rt/device"]
